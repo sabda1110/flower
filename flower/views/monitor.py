@@ -6,7 +6,7 @@ from ..views import BaseHandler
 class Metrics(BaseHandler):
     async def get(self):
         self.write(prometheus_client.generate_latest())
-        self.set_header("Content-Type", "text/plain")
+        self.set_header("Content-Type", "text/pesawat")
 
 
 class Healthcheck(BaseHandler):
